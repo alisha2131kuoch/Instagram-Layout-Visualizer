@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Instagram Clone</title>
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/profile.css">
+  <link rel="stylesheet" href="styles/stories.css">
+  <link rel="stylesheet" href="styles/picture-navigation.css">
+
+  <style>
+    .picture-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 5px;
+      row-gap: 5px;
+    }
+
+    .picture-grid {
+      margin-left: 145px;
+      margin-right: 145px;
+    }
+
+    .photo-container {
+      width: 310px;
+      height: 310px;
+      overflow: hidden;
+      cursor: pointer;
+      /* This will hide any overflowed parts of the image */
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* This will scale the image to cover the container without distortion */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+
+      <!-- <div class="logo-container">
+        <img class="instagram-logo" src="logos/instagram-logo.svg">
+      </div> -->
+      <div class="logo-container">
+        <p class="instagram-visualizer-text">Instagram</p>
+        <pre class="instagram-visualizer-text">          Visualizer</pre>
+      </div>
+
+      <div class="sidebar">
+        <button class="home-button">
+          <img class="house-image" src="icons/home.svg">
+          Home
+        </button>
+
+        <button class="search-button">
+          <img class="search-image" src="icons/search.svg">
+          Search
+        </button>
+
+        <button class="explore-button">
+          <img class="explore-image" src="icons/compass.svg">
+          Explore
+        </button>
+
+        <button class="reels-button">
+          <img class="reels-image" src="icons/film.svg">
+          Reels
+        </button>
+
+        <button class="messages-button">
+          <img class="messages-image" src="icons/send.svg">
+          Messages
+        </button>
+
+        <button class="notification-button">
+          <img class="heart-image" src="icons/heart.svg">
+          Notifications
+        </button>
+
+        <button class="create-button">
+          <img class="create-image" src="icons/plus-square.svg">
+          Create
+        </button>
+        <input type="file" id="uploadInput" accept="image/*" style="display: none;">
+
+
+        <button class="profile-button">
+          <img class="user-image" src="icons/user.svg">
+          Profile
+        </button>
+
+
+
+
+        <button class="ai-studio-button">
+          <img class="ai-studio" src="icons/ai-studio.svg">
+          AI Studio
+        </button>
+
+        <button class="profile-button">
+          <img class="thread-image" src="icons/thread.svg">
+          Threads
+        </button>
+
+        <button class="profile-button">
+          <img class="more-image" src="icons/more.svg">
+          More
+        </button>
+      </div>
+
+    </nav>
+
+
+    <main>
+      <section class="profile">
+
+        <!-- here -->
+        <div class="profile-pic-container">
+          <img class="profile-image" src="profile-pictures/profile-pic.png">
+        </div>
+
+        <!-- here -->
+        <div class="user-detail-container">
+          <!-- here -->
+          <div class="username-row">
+            <p class="username">My.Art</p>
+            <img class="checkmark-icon" src="icons/checkmark.png">
+            <button class="following-button">Following <img class="chevron-icon" src="icons/chevron-down.svg"></button>
+            <button class="Message-button">Message</button>
+            <button class="suggestion-button">
+              <p class="plus-symbol">+</p>
+              <img class="user-suggestion-icon" src="icons/user.svg">
+            </button>
+            <img class="dot-menu-icon" src="icons/dot-menu.svg">s
+          </div>
+
+          <pre class="user-stats">173 posts          1M followers          1000 following</pre>
+          <pre class="user-details">Anonymous</pre>
+
+          <div>
+            <button class="username-button">
+              <p class="at-symbol">@</p>
+              <p class="username2">My.Art</p>
+            </button>
+          </div>
+
+          <pre>23<br>Seattle, WA📍<br>Artist 🎨<br>DM for inquiries :)</pre>
+          <p class="followed-by-list">
+            <span class="followed-by-list-grey">Followed by</span>
+            bcclayart, jtkaterberg,
+            <span class="followed-by-list-grey">and</span>
+            tailsjekel_art
+          </p>
+        </div>
+
+
+      </section>
+
+      <div class="profile-stories-row">
+
+        <div class="story-container">
+          <div class="story-image-container">
+            <img class="abstract-image" src="story-photos/abstract.jpg">
+          </div>
+          <p>Abstracts</p>
+        </div>
+
+        <div class="story-container">
+          <div class="story-image-container">
+            <img class="portrait-image" src="story-photos/portrait.jpg">
+          </div>
+          <p>Portraits</p>
+        </div>
+
+        <div class="story-container">
+          <div class="story-image-container">
+            <img class="landscape-image" src="story-photos/landscape.jpg">
+          </div>
+          <p>Landscapes</p>
+        </div>
+
+        <div class="story-container">
+          <div class="story-image-container">
+            <img class="renaissance-image" src="story-photos/renaissance.jpg">
+          </div>
+          <p>Ranaissance</p>
+        </div>
+
+        <div class="story-container">
+          <div class="story-image-container">
+            <img class="pop-image" src="story-photos/pop.jpg">
+          </div>
+          <p>Pop</p>
+        </div>
+
+        <div class="story-container">
+          <div class="story-image-container">
+            <img class="floral-image" src="story-photos/floral.jpg">
+          </div>
+          <p>Floral</p>
+        </div>
+
+        <div class="story-container">
+          <div class="story-image-container">
+            <img class="realism-image" src="story-photos/realism.jpg">
+          </div>
+          <p>Realism</p>
+        </div>
+
+      </div>
+
+      <div class="picture-navigation-row">
+        <div class="pic-nav-buttons">
+          <button class="posts-button">
+            <img class="grid-icon2" src="icons/3x3grid.svg">
+            POSTS
+          </button>
+          <button class="reels-button">
+            <img class="reels-icon" src="icons/reels.svg">
+            REELS
+          </button>
+          <button class="tagged-button">
+            <img class="tagged-icon" src="icons/tagged.svg">
+            TAGGED
+          </button>
+        </div>
+      </div>
+
+      <section class="picture-grid">
+        <div class="photo-container" draggable="true">
+          <img src="grid-photos/dog1.jpeg">
+        </div>
+
+        <div class="photo-container" draggable="true">
+          <img src="grid-photos/dog2.jpeg">
+        </div>
+
+        <div class="photo-container" draggable="true">
+          <img src="grid-photos/dog3.jpeg">
+        </div>
+
+        <div class="photo-container" draggable="true">
+          <img src="grid-photos/landscape1.jpeg">
+        </div>
+
+        <div class="photo-container" draggable="true">
+          <img src="grid-photos/landscape2.jpeg">
+        </div>
+
+        <div class="photo-container" draggable="true">
+          <img src="grid-photos/landscape3.jpeg">
+        </div>
+
+        <div class="photo-container" draggable="true">
+          <img src="grid-photos/Vibrant1.jpeg">
+        </div>
+
+        <div class="photo-container" draggable="true">
+          <img src="grid-photos/Vibrant2.jpeg">
+        </div>
+
+        <div class="photo-container" draggable="true">
+          <img src="grid-photos/Vibrant3.jpeg">
+        </div>
+
+      </section>
+    </main>
+
+
+  </div>
+
+
+
+  <div id="instruction-overlay">
+    <div class="instruction-content">
+      <div class="arrow">&#8595;</div>
+      <h2>Welcome!</h2>
+      <p style="color: black">Drag and drop to move pictures around.</p>
+      <p style="color: black">Click on a picture to replace it with your own!</p>
+      <p class="small-text">(Click anywhere to get started)</p>
+    </div>
+  </div>
+
+  <style>
+    /* Overlay */
+    #instruction-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(5px);
+      background: rgba(255, 255, 255, 0.5);
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .instruction-content {
+      animation: popin 1s ease forwards;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+      max-width: 90%;
+    }
+
+    .arrow {
+      font-size: 50px;
+      animation: bounce 1s infinite alternate;
+    }
+
+    .small-text {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #555;
+    }
+
+    @keyframes bounce {
+      from {
+        transform: translateY(0);
+      }
+
+      to {
+        transform: translateY(10px);
+      }
+    }
+
+    @keyframes popin {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+
+  <script src="app.js"></script>
+
+
+</body>
+
+</html>

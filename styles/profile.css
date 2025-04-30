@@ -1,0 +1,147 @@
+.profile-pic-container {
+  width: 283.66px;
+  height: 289px;
+  margin-right: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  cursor: pointer;
+}
+
+
+.user-detail-container {
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 65px; */
+}
+
+.username-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.username {
+  font-size: 25px;
+  cursor: pointer;
+
+}
+
+.checkmark-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 8px;
+  margin-right: 25px;
+
+}
+
+.username-row button {
+  font-size: 17px;
+  background-color: rgb(60, 60, 60);
+  color: white;
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
+  border-style: none;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.username-row button:hover {
+  background-color: rgb(39, 38, 38);
+}
+
+.following-button {
+  display: flex;
+  vertical-align: center;
+}
+
+.chevron-icon {
+  width: 19.5px;
+}
+
+/*this is the suggestion button override*/
+.user-detail-container .username-row .suggestion-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*what is the difference between align items and vertical align??*/
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/*this is the follow button override */
+.user-detail-container .username-row .following-button {
+  background-color: rgb(0, 155, 252);
+  transition: background-color 0.15;
+}
+
+.user-detail-container .username-row .following-button:hover {
+  background-color: rgb(4, 107, 171);
+}
+
+.plus-symbol {
+  font-size: 12px;
+}
+
+.user-suggestion-icon {
+  width: 15px;
+}
+
+.dot-menu-icon {
+  width: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.user-stats {
+  font-size: 20px;
+  font-weight: 400;
+
+}
+
+.user-details {
+  margin: 0px;
+  font-size: 17px;
+}
+
+.username-button {
+  background-color: rgb(60, 60, 60);
+  padding: 3px 10px 5px 10px;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+
+.username-button:hover {
+  background-color: rgb(39, 38, 38);
+}
+
+
+
+.at-symbol {
+  font-size: 20px;
+  margin: 0px 5px 0px 0px;
+}
+
+.username2 {
+  margin: 3px 0px 0px 0px;
+}
+
+.followed-by-list-grey {
+  color: grey;
+}
+
+.followed-by-list {
+  font-size: 15px
+}
